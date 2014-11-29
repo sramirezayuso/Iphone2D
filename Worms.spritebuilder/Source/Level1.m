@@ -6,4 +6,17 @@
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
-#include "Level1.h"
+#import "Level1.h"
+
+@implementation Level1
+- (id)init {
+    if (self = [super init]) {
+        CCLOG(@"Level1 created");
+        //CCNode *player = [CCBReader load:@"Player"];
+
+        //[self addChild:player];
+        
+    }
+    return self;
+}
+@end

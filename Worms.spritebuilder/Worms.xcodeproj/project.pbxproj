@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EB3AFA31A2A63AD00E01760 /* Level1.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB3AFA11A2A63AC00E01760 /* Level1.m */; };
+		1EB3AFAB1A2A66E800E01760 /* Ground.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB3AFAA1A2A66E800E01760 /* Ground.m */; };
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
 		A430291A1A2A356F0089E33F /* Revolver.m in Sources */ = {isa = PBXBuildFile; fileRef = A43029151A2A356F0089E33F /* Revolver.m */; };
 		A430291B1A2A356F0089E33F /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = A43029171A2A356F0089E33F /* Player.m */; };
@@ -59,6 +61,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1EB3AFA11A2A63AC00E01760 /* Level1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level1.m; path = Source/Level1.m; sourceTree = "<group>"; };
+		1EB3AFA21A2A63AC00E01760 /* Level1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level1.h; path = Source/Level1.h; sourceTree = "<group>"; };
+		1EB3AFAA1A2A66E800E01760 /* Ground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ground.m; sourceTree = "<group>"; };
+		1EB3AFAC1A2A671D00E01760 /* Ground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ground.h; path = Source/Ground.h; sourceTree = "<group>"; };
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		A43029141A2A356F0089E33F /* Revolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Revolver.h; path = "Source/libs/cocos2d-iphone/../../Revolver.h"; sourceTree = "<group>"; };
 		A43029151A2A356F0089E33F /* Revolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Revolver.m; path = "Source/libs/cocos2d-iphone/../../Revolver.m"; sourceTree = "<group>"; };
@@ -144,6 +150,10 @@
 				B737893E1807617C0076A88C /* AppDelegate.m */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
+				1EB3AFA11A2A63AC00E01760 /* Level1.m */,
+				1EB3AFA21A2A63AC00E01760 /* Level1.h */,
+				1EB3AFAA1A2A66E800E01760 /* Ground.m */,
+				1EB3AFAC1A2A671D00E01760 /* Ground.h */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -357,10 +367,12 @@
 			files = (
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
+				1EB3AFAB1A2A66E800E01760 /* Ground.m in Sources */,
 				A430291A1A2A356F0089E33F /* Revolver.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				A430291C1A2A356F0089E33F /* Grenade.m in Sources */,
 				A430291B1A2A356F0089E33F /* Player.m in Sources */,
+				1EB3AFA31A2A63AD00E01760 /* Level1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

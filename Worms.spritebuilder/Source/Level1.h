@@ -6,9 +6,8 @@
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
-#ifndef __Worms__Level1__
-#define __Worms__Level1__
+#import "CCNode.h"
 
-#include <stdio.h>
+@interface Level1 : CCNode
 
-#endif /* defined(__Worms__Level1__) */
+@end

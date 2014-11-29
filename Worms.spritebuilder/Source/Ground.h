@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
-#ifndef Worms_Ground_h
-#define Worms_Ground_h
+#import "CCSprite.h"
 
+@interface Ground : CCSprite
 
-#endif
+@end

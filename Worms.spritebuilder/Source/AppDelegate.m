@@ -54,15 +54,15 @@
     
     [self setupCocos2dWithOptions:cocos2dSetup];
     
-    [CCBReader load:@"Revolver"];
-    [CCBReader load:@"Player"];
+    //[CCBReader load:@"Revolver"];
+    //[CCBReader load:@"Level1"];
     
     return YES;
 }
 
 - (CCScene*) startScene
 {
-    return [CCBReader loadAsScene:@"MainScene"];
+    return [CCBReader loadAsScene:@"Level2"];
 }
 
 @end

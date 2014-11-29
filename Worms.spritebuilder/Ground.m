@@ -6,4 +6,13 @@
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "Ground.h"
+
+@implementation Ground
+- (id)init {
+    if (self = [super init]) {
+        CCLOG(@"Level1 created");
+    }
+    return self;
+}
+@end

@@ -83,17 +83,24 @@
 			<key>scaleFrom</key>
 			<integer>1</integer>
 		</dict>
+		<key>Backgrounds/Background_Desert.png</key>
+		<dict>
+			<key>isDirty</key>
+			<true/>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>Backgrounds/Background_Snow.png</key>
+		<dict>
+			<key>isDirty</key>
+			<true/>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
 		<key>Bullet/slice04_04.png</key>
 		<dict>
 			<key>scaleFrom</key>
 			<integer>1</integer>
-		</dict>
-		<key>Metal_Slug</key>
-		<dict>
-			<key>isDirty</key>
-			<true/>
-			<key>isSmartSpriteSheet</key>
-			<true/>
 		</dict>
 		<key>MiniTF2</key>
 		<dict>
