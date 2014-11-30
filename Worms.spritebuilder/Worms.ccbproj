@@ -208,6 +208,13 @@
 			<key>scaleFrom</key>
 			<integer>1</integer>
 		</dict>
+		<key>Metal_Slug_Enemy</key>
+		<dict>
+			<key>isDirty</key>
+			<true/>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
 		<key>MiniTF2/slice04_04.png</key>
 		<dict>
 			<key>scaleFrom</key>
