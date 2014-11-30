@@ -54,9 +54,6 @@
     
     [self setupCocos2dWithOptions:cocos2dSetup];
     
-    //[CCBReader load:@"Revolver"];
-    //[CCBReader load:@"Level1"];
-    
     return YES;
 }
 

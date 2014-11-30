@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
-#import "CCSprite.h"
+#import "CCPhysicsNode.h"
 
-@interface Ground : CCSprite
+@interface Ground : CCPhysicsNode
 
 @end

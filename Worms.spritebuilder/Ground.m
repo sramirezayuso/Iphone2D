@@ -11,7 +11,6 @@
 @implementation Ground
 - (id)init {
     if (self = [super init]) {
-        CCLOG(@"Level1 created");
     }
     return self;
 }

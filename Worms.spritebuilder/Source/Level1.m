@@ -11,7 +11,7 @@
 @implementation Level1
 - (id)init {
     if (self = [super init]) {
-        CCLOG(@"Level1 created");
+        CCLOG(@"Level2 created");
         //CCNode *player = [CCBReader load:@"Player"];
 
         //[self addChild:player];
