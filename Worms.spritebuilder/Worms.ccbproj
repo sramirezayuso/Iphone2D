@@ -63,7 +63,7 @@
 	<key>publishToZipFile</key>
 	<false/>
 	<key>resourceAutoScaleFactor</key>
-	<integer>4</integer>
+	<integer>1</integer>
 	<key>resourcePaths</key>
 	<array>
 		<dict>
@@ -85,15 +85,11 @@
 		</dict>
 		<key>Backgrounds/Background_Desert.png</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>scaleFrom</key>
 			<integer>1</integer>
 		</dict>
 		<key>Backgrounds/Background_Snow.png</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>scaleFrom</key>
 			<integer>1</integer>
 		</dict>
@@ -102,10 +98,115 @@
 			<key>scaleFrom</key>
 			<integer>1</integer>
 		</dict>
-		<key>MiniTF2</key>
+		<key>Detached_Heroes/slice139_@.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>Detached_Heroes/slice140_@.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>Detached_Heroes/slice238_@.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>Detached_Heroes/slice241_@.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>Detached_Heroes/slice244_@.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>Detached_Heroes/slice245_@.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>Detached_Heroes/slice267_@.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>Detached_Heroes/slice85_85.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>Metal_Slug</key>
 		<dict>
 			<key>isSmartSpriteSheet</key>
 			<true/>
+		</dict>
+		<key>Metal_Slug/slice01_01.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>Metal_Slug/slice02_02.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>Metal_Slug/slice17_17.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>Metal_Slug/slice180_@.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>Metal_Slug/slice181_@.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>Metal_Slug/slice182_@.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>Metal_Slug/slice18_18.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>Metal_Slug/slice218_@.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>Metal_Slug/slice21_21.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>Metal_Slug/slice221_@.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>Metal_Slug/slice25_25.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>Metal_Slug/slice29_29.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>Metal_Slug/slice31_31.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
 		</dict>
 		<key>MiniTF2/slice04_04.png</key>
 		<dict>
