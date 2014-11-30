@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
-#import "CCSprite.h"
+#import "CCNode.h"
 
-@interface Gameplay : CCSprite
+@interface Gameplay : CCNode
 
 @end

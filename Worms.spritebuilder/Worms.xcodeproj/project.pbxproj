@@ -12,6 +12,18 @@
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
 		A430291B1A2A356F0089E33F /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = A43029171A2A356F0089E33F /* Player.m */; };
 		A43029231A2AC3660089E33F /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = A43029221A2AC3660089E33F /* Gameplay.m */; };
+		A43029381A2AD0840089E33F /* HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A43029311A2AD0840089E33F /* HUD.m */; };
+		A43029411A2AD0A00089E33F /* botonA_presionado.png in Resources */ = {isa = PBXBuildFile; fileRef = A430293C1A2AD0A00089E33F /* botonA_presionado.png */; };
+		A43029421A2AD0A00089E33F /* botonA.png in Resources */ = {isa = PBXBuildFile; fileRef = A430293D1A2AD0A00089E33F /* botonA.png */; };
+		A43029431A2AD0A00089E33F /* botonB_presionado.png in Resources */ = {isa = PBXBuildFile; fileRef = A430293E1A2AD0A00089E33F /* botonB_presionado.png */; };
+		A43029441A2AD0A00089E33F /* botonB.png in Resources */ = {isa = PBXBuildFile; fileRef = A430293F1A2AD0A00089E33F /* botonB.png */; };
+		A43029451A2AD0A00089E33F /* joystick.png in Resources */ = {isa = PBXBuildFile; fileRef = A43029401A2AD0A00089E33F /* joystick.png */; };
+		A43029501A2AD4C20089E33F /* Joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = A43029471A2AD4C20089E33F /* Joystick.m */; };
+		A43029511A2AD4C20089E33F /* SneakyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A43029491A2AD4C20089E33F /* SneakyButton.m */; };
+		A43029521A2AD4C20089E33F /* SneakyButtonSkinnedBase.m in Sources */ = {isa = PBXBuildFile; fileRef = A430294B1A2AD4C20089E33F /* SneakyButtonSkinnedBase.m */; };
+		A43029531A2AD4C20089E33F /* SneakyJoystick.m in Sources */ = {isa = PBXBuildFile; fileRef = A430294D1A2AD4C20089E33F /* SneakyJoystick.m */; };
+		A43029541A2AD4C20089E33F /* SneakyJoystickSkinnedBase.m in Sources */ = {isa = PBXBuildFile; fileRef = A430294F1A2AD4C20089E33F /* SneakyJoystickSkinnedBase.m */; };
+		A43029561A2AD54E0089E33F /* dpad.png in Resources */ = {isa = PBXBuildFile; fileRef = A43029551A2AD54E0089E33F /* dpad.png */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
 		B71F5913188484E7003F4D28 /* iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5909188484E7003F4D28 /* iPad.png */; };
@@ -69,6 +81,24 @@
 		A43029171A2A356F0089E33F /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = "Source/libs/cocos2d-iphone/../../Player.m"; sourceTree = "<group>"; };
 		A43029211A2AC3660089E33F /* Gameplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gameplay.h; path = Source/Gameplay.h; sourceTree = "<group>"; };
 		A43029221A2AC3660089E33F /* Gameplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Gameplay.m; path = Source/Gameplay.m; sourceTree = "<group>"; };
+		A43029301A2AD0840089E33F /* HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUD.h; sourceTree = "<group>"; };
+		A43029311A2AD0840089E33F /* HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUD.m; sourceTree = "<group>"; };
+		A430293C1A2AD0A00089E33F /* botonA_presionado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = botonA_presionado.png; sourceTree = "<group>"; };
+		A430293D1A2AD0A00089E33F /* botonA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = botonA.png; sourceTree = "<group>"; };
+		A430293E1A2AD0A00089E33F /* botonB_presionado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = botonB_presionado.png; sourceTree = "<group>"; };
+		A430293F1A2AD0A00089E33F /* botonB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = botonB.png; sourceTree = "<group>"; };
+		A43029401A2AD0A00089E33F /* joystick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joystick.png; sourceTree = "<group>"; };
+		A43029461A2AD4C20089E33F /* Joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Joystick.h; sourceTree = "<group>"; };
+		A43029471A2AD4C20089E33F /* Joystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Joystick.m; sourceTree = "<group>"; };
+		A43029481A2AD4C20089E33F /* SneakyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SneakyButton.h; sourceTree = "<group>"; };
+		A43029491A2AD4C20089E33F /* SneakyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SneakyButton.m; sourceTree = "<group>"; };
+		A430294A1A2AD4C20089E33F /* SneakyButtonSkinnedBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SneakyButtonSkinnedBase.h; sourceTree = "<group>"; };
+		A430294B1A2AD4C20089E33F /* SneakyButtonSkinnedBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SneakyButtonSkinnedBase.m; sourceTree = "<group>"; };
+		A430294C1A2AD4C20089E33F /* SneakyJoystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SneakyJoystick.h; sourceTree = "<group>"; };
+		A430294D1A2AD4C20089E33F /* SneakyJoystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SneakyJoystick.m; sourceTree = "<group>"; };
+		A430294E1A2AD4C20089E33F /* SneakyJoystickSkinnedBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SneakyJoystickSkinnedBase.h; sourceTree = "<group>"; };
+		A430294F1A2AD4C20089E33F /* SneakyJoystickSkinnedBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SneakyJoystickSkinnedBase.m; sourceTree = "<group>"; };
+		A43029551A2AD54E0089E33F /* dpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dpad.png; sourceTree = "<group>"; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
 		B71F5908188484E7003F4D28 /* iPad-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old@2x.png"; path = "Icons/iPad-old@2x.png"; sourceTree = "<group>"; };
 		B71F5909188484E7003F4D28 /* iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPad.png; path = Icons/iPad.png; sourceTree = "<group>"; };
@@ -137,6 +167,18 @@
 		B737893C1807616C0076A88C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				A43029461A2AD4C20089E33F /* Joystick.h */,
+				A43029471A2AD4C20089E33F /* Joystick.m */,
+				A43029481A2AD4C20089E33F /* SneakyButton.h */,
+				A43029491A2AD4C20089E33F /* SneakyButton.m */,
+				A430294A1A2AD4C20089E33F /* SneakyButtonSkinnedBase.h */,
+				A430294B1A2AD4C20089E33F /* SneakyButtonSkinnedBase.m */,
+				A430294C1A2AD4C20089E33F /* SneakyJoystick.h */,
+				A430294D1A2AD4C20089E33F /* SneakyJoystick.m */,
+				A430294E1A2AD4C20089E33F /* SneakyJoystickSkinnedBase.h */,
+				A430294F1A2AD4C20089E33F /* SneakyJoystickSkinnedBase.m */,
+				A43029301A2AD0840089E33F /* HUD.h */,
+				A43029311A2AD0840089E33F /* HUD.m */,
 				A43029161A2A356F0089E33F /* Player.h */,
 				A43029171A2A356F0089E33F /* Player.m */,
 				B737893D1807617C0076A88C /* AppDelegate.h */,
@@ -223,6 +265,12 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A43029551A2AD54E0089E33F /* dpad.png */,
+				A430293C1A2AD0A00089E33F /* botonA_presionado.png */,
+				A430293D1A2AD0A00089E33F /* botonA.png */,
+				A430293E1A2AD0A00089E33F /* botonB_presionado.png */,
+				A430293F1A2AD0A00089E33F /* botonB.png */,
+				A43029401A2AD0A00089E33F /* joystick.png */,
 				B73789911807667A0076A88C /* Icons */,
 				B737893A180761570076A88C /* Published-iOS */,
 			);
@@ -321,7 +369,9 @@
 				B71F5919188484E7003F4D28 /* Settings.png in Resources */,
 				B7378978180762440076A88C /* Default@2x.png in Resources */,
 				B71F5914188484E7003F4D28 /* iPad@2x.png in Resources */,
+				A43029431A2AD0A00089E33F /* botonB_presionado.png in Resources */,
 				B71F5913188484E7003F4D28 /* iPad.png in Resources */,
+				A43029421A2AD0A00089E33F /* botonA.png in Resources */,
 				B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */,
 				B71F5916188484E7003F4D28 /* iPhone-old@2x.png in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
@@ -330,8 +380,12 @@
 				B71F5915188484E7003F4D28 /* iPhone-old.png in Resources */,
 				B71F5917188484E7003F4D28 /* iPhone.png in Resources */,
 				B7378975180762440076A88C /* Default-568h@2x.png in Resources */,
+				A43029561A2AD54E0089E33F /* dpad.png in Resources */,
 				B71F5918188484E7003F4D28 /* iPhone@2x.png in Resources */,
+				A43029451A2AD0A00089E33F /* joystick.png in Resources */,
 				B7378977180762440076A88C /* Default.png in Resources */,
+				A43029441A2AD0A00089E33F /* botonB.png in Resources */,
+				A43029411A2AD0A00089E33F /* botonA_presionado.png in Resources */,
 				B71F5911188484E7003F4D28 /* iPad-old.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,12 +415,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				A43029231A2AC3660089E33F /* Gameplay.m in Sources */,
+				A43029381A2AD0840089E33F /* HUD.m in Sources */,
+				A43029531A2AD4C20089E33F /* SneakyJoystick.m in Sources */,
+				A43029511A2AD4C20089E33F /* SneakyButton.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
+				A43029541A2AD4C20089E33F /* SneakyJoystickSkinnedBase.m in Sources */,
 				1EB3AFAB1A2A66E800E01760 /* Ground.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				A430291B1A2A356F0089E33F /* Player.m in Sources */,
+				A43029501A2AD4C20089E33F /* Joystick.m in Sources */,
 				1EB3AFA31A2A63AD00E01760 /* Level1.m in Sources */,
+				A43029521A2AD4C20089E33F /* SneakyButtonSkinnedBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

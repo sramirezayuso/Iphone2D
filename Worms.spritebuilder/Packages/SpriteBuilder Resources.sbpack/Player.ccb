@@ -16,7 +16,7 @@
 	<key>currentResolution</key>
 	<integer>0</integer>
 	<key>currentSequenceId</key>
-	<integer>0</integer>
+	<integer>7</integer>
 	<key>docDimensionsType</key>
 	<integer>1</integer>
 	<key>fileType</key>
@@ -493,7 +493,7 @@
 						<key>type</key>
 						<string>Check</string>
 						<key>value</key>
-						<true/>
+						<false/>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -9394,7 +9394,7 @@
 						<key>type</key>
 						<string>Check</string>
 						<key>value</key>
-						<false/>
+						<true/>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -17527,7 +17527,7 @@
 				<integer>12</integer>
 			</dict>
 			<key>chainedSequenceId</key>
-			<integer>-1</integer>
+			<integer>0</integer>
 			<key>length</key>
 			<real>0.83333331346511841</real>
 			<key>name</key>
@@ -17563,7 +17563,7 @@
 				<integer>12</integer>
 			</dict>
 			<key>chainedSequenceId</key>
-			<integer>-1</integer>
+			<integer>1</integer>
 			<key>length</key>
 			<real>0.83333331346511841</real>
 			<key>name</key>
@@ -17599,7 +17599,7 @@
 				<integer>12</integer>
 			</dict>
 			<key>chainedSequenceId</key>
-			<integer>-1</integer>
+			<integer>0</integer>
 			<key>length</key>
 			<real>0.86666667461395264</real>
 			<key>name</key>
@@ -17635,7 +17635,7 @@
 				<integer>12</integer>
 			</dict>
 			<key>chainedSequenceId</key>
-			<integer>-1</integer>
+			<integer>1</integer>
 			<key>length</key>
 			<real>0.86666667461395264</real>
 			<key>name</key>
@@ -17671,7 +17671,7 @@
 				<integer>12</integer>
 			</dict>
 			<key>chainedSequenceId</key>
-			<integer>-1</integer>
+			<integer>2</integer>
 			<key>length</key>
 			<real>0.83333331346511841</real>
 			<key>name</key>
@@ -17707,7 +17707,7 @@
 				<integer>12</integer>
 			</dict>
 			<key>chainedSequenceId</key>
-			<integer>-1</integer>
+			<integer>3</integer>
 			<key>length</key>
 			<real>0.83333331346511841</real>
 			<key>name</key>

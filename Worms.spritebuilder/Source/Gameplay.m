@@ -7,9 +7,11 @@
 //
 
 #import "Gameplay.h"
+#import "HUD.h"
 
 @implementation Gameplay {
-    CCNode *_player;
+    CCNode* _player;
+    HUD* _hud;
 }
 
 // is called when CCB file has completed loading
@@ -17,17 +19,16 @@
     CCLOG(@"Gameplay Started!");
     // tell this scene to accept touches
     self.userInteractionEnabled = TRUE;
+    _hud = [[HUD alloc] init: _player];
+    [self addChild: _hud];
 }
 
 // called on every touch in this scene
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
-    CCLOG(@"It Tingles!");
-    [_player.animationManager runAnimationsForSequenceNamed:@"WalkRight"];
 }
 
 // called on every touch in this scene
 - (void)touchEnded:(UITouch *)touch withEvent:(UIEvent *)event {
-    [_player.animationManager runAnimationsForSequenceNamed:@"StandRight"];
 }
 
 @end
