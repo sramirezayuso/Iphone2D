@@ -210,8 +210,6 @@
 		</dict>
 		<key>Metal_Slug_Enemy</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>isSmartSpriteSheet</key>
 			<true/>
 		</dict>

@@ -14,5 +14,5 @@
 }
 
 - (id)init:(CCNode*) player;
-
+- (void) allFlagsFalse;
 @end

@@ -12,6 +12,7 @@
 @implementation Gameplay {
     CCNode* _player;
     HUD* _hud;
+    CCPhysicsNode* _physicsNode;
 }
 
 // is called when CCB file has completed loading

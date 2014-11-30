@@ -40,7 +40,7 @@
 		<key>children</key>
 		<array/>
 		<key>customClass</key>
-		<string>Ground</string>
+		<string></string>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>
@@ -74,40 +74,40 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>0.0</real>
-					<real>0.0</real>
+					<real>-198.87501525878906</real>
+					<real>10.332015991210938</real>
 				</array>
 				<array>
-					<real>0.0</real>
-					<real>10</real>
+					<real>-198.35548400878906</real>
+					<real>34.374984741210938</real>
 				</array>
 				<array>
-					<real>100</real>
-					<real>10</real>
+					<real>225.30462646484375</real>
+					<real>38.023422241210938</real>
 				</array>
 				<array>
-					<real>100</real>
-					<real>0.0</real>
+					<real>226.1328125</real>
+					<real>15.460922241210938</real>
 				</array>
 			</array>
 			<key>polygons</key>
 			<array>
 				<array>
 					<array>
-						<real>100</real>
-						<real>0.0</real>
+						<real>226.1328125</real>
+						<real>15.460922241210938</real>
 					</array>
 					<array>
-						<real>100</real>
-						<real>10</real>
+						<real>225.30462646484375</real>
+						<real>38.023422241210938</real>
 					</array>
 					<array>
-						<real>0.0</real>
-						<real>10</real>
+						<real>-198.35548400878906</real>
+						<real>34.374984741210938</real>
 					</array>
 					<array>
-						<real>0.0</real>
-						<real>0.0</real>
+						<real>-198.87501525878906</real>
+						<real>10.332015991210938</real>
 					</array>
 				</array>
 			</array>
@@ -120,7 +120,7 @@
 				<key>type</key>
 				<string>StringSimple</string>
 				<key>value</key>
-				<string>Ground</string>
+				<string></string>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -143,8 +143,8 @@
 				<string>Size</string>
 				<key>value</key>
 				<array>
-					<real>100</real>
-					<real>10</real>
+					<real>0.0</real>
+					<real>0.0</real>
 					<integer>0</integer>
 					<integer>0</integer>
 				</array>

@@ -31,7 +31,7 @@
                                           disabledSpriteFrame:nil];
         
         ba.userInteractionEnabled = TRUE;
-        ba.position = ccp(630,60);
+        ba.position = ccp(780,60);
         botonA = ba;
         [self addChild:botonA z:0];
         
@@ -41,7 +41,7 @@
                              disabledSpriteFrame:nil];
         
         bb.userInteractionEnabled = TRUE;
-        bb.position = ccp(730,120);
+        bb.position = ccp(880,120);
         botonB = bb;
         [self addChild:botonB z:0];
         
