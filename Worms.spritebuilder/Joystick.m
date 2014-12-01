@@ -17,6 +17,7 @@
 -(id) init{
     if(self=[super init]){
         //Aca hago algo re loco
+        
         SneakyJoystickSkinnedBase *baseJoy = [[SneakyJoystickSkinnedBase alloc] init];
         baseJoy.position = ccp(84,84);
         baseJoy.backgroundSprite = [CCSprite spriteWithImageNamed:(@"dpad.png")];
@@ -31,7 +32,8 @@
                                           disabledSpriteFrame:nil];
         
         ba.userInteractionEnabled = TRUE;
-        ba.position = ccp(780,60);
+        
+        ba.position = ccp(750,60);
         botonA = ba;
         [self addChild:botonA z:0];
         
@@ -41,7 +43,7 @@
                              disabledSpriteFrame:nil];
         
         bb.userInteractionEnabled = TRUE;
-        bb.position = ccp(880,120);
+        bb.position = ccp(850,120);
         botonB = bb;
         [self addChild:botonB z:0];
         

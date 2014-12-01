@@ -33,6 +33,4 @@
 //Optimizations (keep Squared values of all radii for faster calculations) (updated internally when changing radii)
 @property (nonatomic, assign) float radius;
 
--(id)initWithRect:(CGRect)rect;
-
 @end

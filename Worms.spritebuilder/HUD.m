@@ -17,6 +17,9 @@
     bool wright;
     bool wuleft;
     bool wuright;
+    OALSimpleAudio *audio;
+    int shoottime;
+    int jumptime;
 }
 
 - (id)init:(CCNode*) player {
@@ -28,6 +31,15 @@
         joy = [[Joystick alloc]init];
         joy.scale = 0.6;
         [self addChild:joy z:10];
+        
+        // access audio object
+        audio = [OALSimpleAudio sharedInstance];
+        // play background sound
+
+
+        [audio preloadEffect:@"gun.mp3"];
+        shoottime = 0;
+        jumptime = 0;
         
     }
     return self;
@@ -97,12 +109,16 @@
             sright = true;
         }
     }
-    
+    if(shoottime > 0){
+        shoottime = shoottime-delta;
+    }
     // Botón A
     if ( joy.botonA.touchInside ) {
         NSLog(@"Botón A");
         NSLog(@"%d", sleft);
         NSLog(@"%d", sright);
+        if(shoottime <=0){
+        
         if(wright || sright) {
             [_player.animationManager runAnimationsForSequenceNamed:@"ShootRight"];
         } else if (wuright) {
@@ -112,17 +128,28 @@
         } else if (wuleft) {
             [_player.animationManager runAnimationsForSequenceNamed:@"ShootAngleLeft"];
         }
-        
+        [audio playEffect:@"gun.mp3"];
+            shoottime = 15;
+        }
+    }
+    
+    if(jumptime > 0){
+        jumptime = jumptime-delta;
     }
     // Botón B
+
     if ( joy.botonB.touchInside ) {
-        NSLog(@"Botón B");
-        if(wright || wuright || sright) {
-            [_player.animationManager runAnimationsForSequenceNamed:@"JumpRight"];
-            [_player.physicsBody setVelocity:CGPointMake(0,100)];
-        } else if (wleft || wuleft || sleft) {
-            [_player.animationManager runAnimationsForSequenceNamed:@"JumpLeft"];
-            [_player.physicsBody setVelocity:CGPointMake(0,100)];
+        if(jumptime <=0){
+            NSLog(@"Botón B");
+            if(wright || wuright || sright) {
+                [_player.animationManager runAnimationsForSequenceNamed:@"JumpRight"];
+                [_player.physicsBody setVelocity:CGPointMake(0,100)];
+            } else if (wleft || wuleft || sleft) {
+                [_player.animationManager runAnimationsForSequenceNamed:@"JumpLeft"];
+                [_player.physicsBody setVelocity:CGPointMake(0,100)];
+            }
+            //Esto al valor de 60 funciona como deberia, se baja a 10 para testeo
+            jumptime = 10;
         }
     }
 }

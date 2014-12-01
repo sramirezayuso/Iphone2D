@@ -31,6 +31,8 @@
 @property (nonatomic, retain) CCButton *botonA;
 @property (nonatomic, retain) CCButton *botonB;
 
+-(id) init: (CCDirector*) dir;
+
 @end
 
 #endif
