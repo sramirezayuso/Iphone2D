@@ -35,14 +35,14 @@
 
 -(void)update:(CCTime)delta {
     // Comprueba el movimiento hacia la izquierda o derecha
-    if ( joy.palanca.velocity.x > 0.2 ) {
-        if ( joy.palanca.velocity.y < 0.3 && !wright){
+    if ( joy.palanca.velocity.x >= 0.2 ) {
+        if ( joy.palanca.velocity.y <= 0.3 && !wright){
             [self allFlagsFalse];
             wright = true;
             NSLog(@"Derecha: %f", joy.palanca.velocity.x);
             [_player.animationManager runAnimationsForSequenceNamed:@"WalkRight"];
             [_player.physicsBody setVelocity:CGPointMake(100,0)];
-        } else if (joy.palanca.velocity.y > 0.6 && !jumping){
+        } else if (joy.palanca.velocity.y >= 0.6 && !jumping){
             [self allFlagsFalse];
             jumping = true;
             NSLog(@"Arriba: %f", joy.palanca.velocity.x);
@@ -55,14 +55,14 @@
             [_player.animationManager runAnimationsForSequenceNamed:@"PointAngleRight"];
         }
         
-    } else if ( joy.palanca.velocity.x < -0.2 ) {
-        if ( joy.palanca.velocity.y < 0.3 && !wleft){
+    } else if ( joy.palanca.velocity.x <= -0.2 ) {
+        if ( joy.palanca.velocity.y <= 0.3 && !wleft){
             [self allFlagsFalse];
             wleft = true;
             NSLog(@"Izquierda: %f", joy.palanca.velocity.x);
             [_player.animationManager runAnimationsForSequenceNamed:@"WalkLeft"];
             [_player.physicsBody setVelocity:CGPointMake(-100,0)];
-        } else if (joy.palanca.velocity.y > 0.6 && !jumping){
+        } else if (joy.palanca.velocity.y >= 0.6 && !jumping){
             [self allFlagsFalse];
             jumping = true;
             NSLog(@"Arriba: %f", joy.palanca.velocity.x);
@@ -75,7 +75,7 @@
             [_player.physicsBody setVelocity:CGPointMake(0,0)];
         }
     }else if(!jumping){
-         if (joy.palanca.velocity.y > 0.7){
+         if (joy.palanca.velocity.y >= 0.7){
              [self allFlagsFalse];
              jumping = true;
              NSLog(@"Arriba: %f", joy.palanca.velocity.x);

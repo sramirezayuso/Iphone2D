@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E05BA651A2BB01400446773 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1E05BA641A2BB01400446773 /* music.mp3 */; };
+		1E05BA681A2BB46900446773 /* menu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1E05BA671A2BB46900446773 /* menu.mp3 */; };
+		1E05BA6A1A2BC28500446773 /* marco.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1E05BA691A2BC28500446773 /* marco.mp3 */; };
+		1E05BA6C1A2BC3AB00446773 /* level.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1E05BA6B1A2BC3AB00446773 /* level.mp3 */; };
+		1E05BA6E1A2BC62B00446773 /* level2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1E05BA6D1A2BC62B00446773 /* level2.mp3 */; };
+		1E3853571A2BD67100258779 /* ok.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1E3853561A2BD67100258779 /* ok.mp3 */; };
 		1EB3AFA31A2A63AD00E01760 /* Level1.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB3AFA11A2A63AC00E01760 /* Level1.m */; };
 		1EB3AFAB1A2A66E800E01760 /* Ground.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB3AFAA1A2A66E800E01760 /* Ground.m */; };
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
@@ -72,6 +78,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E05BA641A2BB01400446773 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		1E05BA671A2BB46900446773 /* menu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = menu.mp3; sourceTree = "<group>"; };
+		1E05BA691A2BC28500446773 /* marco.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = marco.mp3; sourceTree = "<group>"; };
+		1E05BA6B1A2BC3AB00446773 /* level.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = level.mp3; sourceTree = "<group>"; };
+		1E05BA6D1A2BC62B00446773 /* level2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = level2.mp3; sourceTree = "<group>"; };
+		1E3853561A2BD67100258779 /* ok.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ok.mp3; sourceTree = "<group>"; };
 		1EB3AFA11A2A63AC00E01760 /* Level1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level1.m; path = Source/Level1.m; sourceTree = "<group>"; };
 		1EB3AFA21A2A63AC00E01760 /* Level1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level1.h; path = Source/Level1.h; sourceTree = "<group>"; };
 		1EB3AFAA1A2A66E800E01760 /* Ground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ground.m; sourceTree = "<group>"; };
@@ -265,6 +277,12 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1E3853561A2BD67100258779 /* ok.mp3 */,
+				1E05BA6D1A2BC62B00446773 /* level2.mp3 */,
+				1E05BA6B1A2BC3AB00446773 /* level.mp3 */,
+				1E05BA691A2BC28500446773 /* marco.mp3 */,
+				1E05BA671A2BB46900446773 /* menu.mp3 */,
+				1E05BA641A2BB01400446773 /* music.mp3 */,
 				A43029551A2AD54E0089E33F /* dpad.png */,
 				A430293C1A2AD0A00089E33F /* botonA_presionado.png */,
 				A430293D1A2AD0A00089E33F /* botonA.png */,
@@ -368,6 +386,7 @@
 			files = (
 				B71F5919188484E7003F4D28 /* Settings.png in Resources */,
 				B7378978180762440076A88C /* Default@2x.png in Resources */,
+				1E05BA681A2BB46900446773 /* menu.mp3 in Resources */,
 				B71F5914188484E7003F4D28 /* iPad@2x.png in Resources */,
 				A43029431A2AD0A00089E33F /* botonB_presionado.png in Resources */,
 				B71F5913188484E7003F4D28 /* iPad.png in Resources */,
@@ -377,11 +396,16 @@
 				B737893B180761570076A88C /* Published-iOS in Resources */,
 				B71F591A188484E7003F4D28 /* Settings@2x.png in Resources */,
 				B7378976180762440076A88C /* Default-Landscape~ipad.png in Resources */,
+				1E05BA651A2BB01400446773 /* music.mp3 in Resources */,
 				B71F5915188484E7003F4D28 /* iPhone-old.png in Resources */,
+				1E3853571A2BD67100258779 /* ok.mp3 in Resources */,
 				B71F5917188484E7003F4D28 /* iPhone.png in Resources */,
 				B7378975180762440076A88C /* Default-568h@2x.png in Resources */,
+				1E05BA6C1A2BC3AB00446773 /* level.mp3 in Resources */,
 				A43029561A2AD54E0089E33F /* dpad.png in Resources */,
+				1E05BA6A1A2BC28500446773 /* marco.mp3 in Resources */,
 				B71F5918188484E7003F4D28 /* iPhone@2x.png in Resources */,
+				1E05BA6E1A2BC62B00446773 /* level2.mp3 in Resources */,
 				A43029451A2AD0A00089E33F /* joystick.png in Resources */,
 				B7378977180762440076A88C /* Default.png in Resources */,
 				A43029441A2AD0A00089E33F /* botonB.png in Resources */,
