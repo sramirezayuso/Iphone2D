@@ -163,7 +163,7 @@
 							<key>collisionMask</key>
 							<array/>
 							<key>collisionType</key>
-							<string></string>
+							<string>Player</string>
 							<key>cornerRadius</key>
 							<real>0.0</real>
 							<key>density</key>
@@ -173,7 +173,7 @@
 							<key>elasticity</key>
 							<real>0.30000001192092896</real>
 							<key>friction</key>
-							<real>1</real>
+							<real>0.30000001192092896</real>
 							<key>points</key>
 							<array>
 								<array>
@@ -232,7 +232,7 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>263.00003051757812</real>
+									<real>262.00003051757812</real>
 									<real>22.000030517578125</real>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -290,7 +290,7 @@
 							<key>collisionMask</key>
 							<array/>
 							<key>collisionType</key>
-							<string></string>
+							<string>Wall</string>
 							<key>cornerRadius</key>
 							<real>0.0</real>
 							<key>density</key>
@@ -417,7 +417,7 @@
 							<key>collisionMask</key>
 							<array/>
 							<key>collisionType</key>
-							<string></string>
+							<string>Platform</string>
 							<key>cornerRadius</key>
 							<real>0.0</real>
 							<key>density</key>
@@ -544,7 +544,7 @@
 							<key>collisionMask</key>
 							<array/>
 							<key>collisionType</key>
-							<string></string>
+							<string>Platform</string>
 							<key>cornerRadius</key>
 							<real>0.0</real>
 							<key>density</key>
@@ -655,7 +655,7 @@
 						<key>displayName</key>
 						<string>Mailbox</string>
 						<key>memberVarAssignmentName</key>
-						<string></string>
+						<string>_spawn3</string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>physicsBody</key>
@@ -671,7 +671,7 @@
 							<key>collisionMask</key>
 							<array/>
 							<key>collisionType</key>
-							<string></string>
+							<string>Platform</string>
 							<key>cornerRadius</key>
 							<real>0.0</real>
 							<key>density</key>
@@ -798,7 +798,7 @@
 							<key>collisionMask</key>
 							<array/>
 							<key>collisionType</key>
-							<string></string>
+							<string>Platform</string>
 							<key>cornerRadius</key>
 							<real>0.0</real>
 							<key>density</key>
@@ -925,7 +925,7 @@
 							<key>collisionMask</key>
 							<array/>
 							<key>collisionType</key>
-							<string></string>
+							<string>Platform</string>
 							<key>cornerRadius</key>
 							<real>0.0</real>
 							<key>density</key>
@@ -1062,7 +1062,7 @@
 						<key>displayName</key>
 						<string>Window_2</string>
 						<key>memberVarAssignmentName</key>
-						<string>_spawn3</string>
+						<string></string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>physicsBody</key>
@@ -1078,7 +1078,7 @@
 							<key>collisionMask</key>
 							<array/>
 							<key>collisionType</key>
-							<string></string>
+							<string>Platform</string>
 							<key>cornerRadius</key>
 							<real>0.0</real>
 							<key>density</key>
@@ -1176,6 +1176,8 @@
 								<string>Ground.ccb</string>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -1205,7 +1207,7 @@
 							<key>collisionMask</key>
 							<array/>
 							<key>collisionType</key>
-							<string></string>
+							<string>Platform</string>
 							<key>cornerRadius</key>
 							<real>0.0</real>
 							<key>density</key>
@@ -1332,7 +1334,7 @@
 							<key>collisionMask</key>
 							<array/>
 							<key>collisionType</key>
-							<string></string>
+							<string>Wall</string>
 							<key>cornerRadius</key>
 							<real>0.0</real>
 							<key>density</key>
@@ -1430,8 +1432,6 @@
 								<string>Ground.ccb</string>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -1461,7 +1461,7 @@
 							<key>collisionMask</key>
 							<array/>
 							<key>collisionType</key>
-							<string></string>
+							<string>Wall</string>
 							<key>cornerRadius</key>
 							<real>0.0</real>
 							<key>density</key>

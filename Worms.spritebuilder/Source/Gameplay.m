@@ -8,12 +8,13 @@
 
 #import "Gameplay.h"
 #import "HUD.h"
+#import "Bullet.h"
 
-@implementation Gameplay {
+@implementation Gameplay{
 
     HUD* _hud;
     CCPhysicsNode* _physicsNode;
-    CCNode* _player;    
+    CCNode* _player;
     CCNode* _spawn1;
     
     CCNode* _spawn2;
@@ -21,6 +22,10 @@
     CCNode* _spawn3;
     
     CCNode* _ground;
+    int enemies;
+    int enemieskilled;
+    NSArray* spawnPoints;
+    NSArray* spawned;
 }
 
 // is called when CCB file has completed loading
@@ -30,16 +35,22 @@
     self.userInteractionEnabled = TRUE;
     _hud = [[HUD alloc] init: _player];
     [self addChild: _hud];
+    enemies = 0;
+    enemieskilled = 0;
+    spawnPoints = [NSArray arrayWithObjects:_spawn1, _spawn2, _spawn3, _ground, nil];
     
-    NSArray* spawnPoints = [NSArray arrayWithObjects:_spawn1, _spawn2, _spawn3, _ground, nil];
+    spawned = [NSArray arrayWithObjects: @FALSE, @FALSE, @FALSE, @FALSE, nil];
     
-    NSArray* spawned = [NSArray arrayWithObjects: @FALSE, @FALSE, @FALSE, @FALSE, nil];
     
-    for (int i = 0 ; i < 3; i++) {
-        
-        [self spawnEnemy:spawnPoints whenSpawned:spawned];
-        
+    [_physicsNode setCollisionDelegate:self];
+}
+
+-(void) update:(CCTime)delta{
+    if(enemies<=0){
+        [self spawnEnemies];
+        enemies = 3;
     }
+    
 }
 
 // called on every touch in this scene
@@ -50,14 +61,58 @@
 - (void)touchEnded:(UITouch *)touch withEvent:(UIEvent *)event {
 }
 
-- (void)spawnEnemy:(NSArray *)spawnPoints whenSpawned:(NSArray *)spawned {
-    int random = 0; //Calculate random 0 to [spawnPoints count]-1
-    while ([spawned objectAtIndex: random] == 0) {
-        int random = 1; //Calculate random 0 to [spawnPoints count]-1
+- (void)spawnEnemies {
+    int i;
+    for(i=0;i<3;i++){
+        CCNode* enemy = [CCBReader load:@"Enemy"];
+        [enemy setPosition: ((CCNode *) [spawnPoints objectAtIndex: i /*random*/]).position];
+        [_physicsNode addChild: enemy];
     }
-    CCNode* enemy = [CCBReader load:@"Enemy"];
-    [enemy setPosition: ((CCNode *) [spawnPoints objectAtIndex: 1 /*random*/]).position];
-    [_physicsNode addChild: enemy];
-    //Set spawned to true
+}
+
+-(CGPoint)playerPos{
+    return _player.position;
+}
+
+//Bala Enemigo
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair Bullet:(Bullet *)nodeA Enemy:(CCNode *)nodeB {
+    NSLog(@"MUERTO %d",nodeA.enemy);
+    if(nodeA.enemy){
+        return NO;
+    }
+    [nodeB removeFromParent];
+    [nodeA removeFromParent];
+    enemies = enemies - 1;
+    enemieskilled = enemieskilled+1;
+    return NO;
+}
+
+//Bala Plataforma
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair Bullet:(CCNode *)nodeA Platform:(CCNode *)nodeB {
+    return NO;
+}
+
+//Bala Pared
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair Bullet:(CCNode *)nodeA Wall:(CCNode *)nodeB {
+    [nodeA removeFromParent];
+    return NO;
+}
+
+//Bala Bala
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair Bullet:(CCNode *)nodeA Bullet:(CCNode *)nodeB {
+    return NO;
+}
+
+//Bala PLayer
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair Bullet:(Bullet *)nodeA Player:(CCNode *)nodeB {
+    if(nodeA.enemy){
+        //[nodeB removeFromParent];
+    }
+    return NO;
+}
+
+//Enemy Player
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair Player:(Bullet *)nodeA Enemy:(CCNode *)nodeB {
+    return NO;
 }
 @end

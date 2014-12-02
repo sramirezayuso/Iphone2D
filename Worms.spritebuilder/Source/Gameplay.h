@@ -8,6 +8,10 @@
 
 #import "CCNode.h"
 
+
 @interface Gameplay : CCNode
+-(CGPoint)playerPos;
+@property CCNode* player;
+@property CCPhysicsNode* physicsNode;
 
 @end

@@ -6,8 +6,8 @@
 //
 //
 
-#import "CCSprite.h"
+#import "CCNode.h"
 
-@interface Player : CCSprite
+@interface Player : CCNode
 
 @end

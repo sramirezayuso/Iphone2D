@@ -7,6 +7,8 @@
 //
 
 #import "HUD.h"
+#import "Gameplay.h"
+#import "bullet.h"
 
 @implementation HUD {
     CCNode* _player;
@@ -20,6 +22,9 @@
     OALSimpleAudio *audio;
     int shoottime;
     int jumptime;
+    
+    CCPhysicsNode* _pnode;
+    Gameplay* gameplay;
 }
 
 - (id)init:(CCNode*) player {
@@ -114,19 +119,22 @@
     }
     // Botón A
     if ( joy.botonA.touchInside ) {
-        NSLog(@"Botón A");
         NSLog(@"%d", sleft);
         NSLog(@"%d", sright);
         if(shoottime <=0){
         
         if(wright || sright) {
             [_player.animationManager runAnimationsForSequenceNamed:@"ShootRight"];
+            [self shoot:CGPointMake(1,0)];
         } else if (wuright) {
             [_player.animationManager runAnimationsForSequenceNamed:@"ShootAngleRight"];
+            [self shoot:CGPointMake(0.5,0.5)];
         } else if (wleft || sleft) {
             [_player.animationManager runAnimationsForSequenceNamed:@"ShootLeft"];
+            [self shoot:CGPointMake(-1,0)];
         } else if (wuleft) {
             [_player.animationManager runAnimationsForSequenceNamed:@"ShootAngleLeft"];
+            [self shoot:CGPointMake(-0.5,0.5)];
         }
         [audio playEffect:@"gun.mp3"];
             shoottime = 15;
@@ -140,7 +148,6 @@
 
     if ( joy.botonB.touchInside ) {
         if(jumptime <=0){
-            NSLog(@"Botón B");
             if(wright || wuright || sright) {
                 [_player.animationManager runAnimationsForSequenceNamed:@"JumpRight"];
                 [_player.physicsBody setVelocity:CGPointMake(0,100)];
@@ -162,6 +169,23 @@
     wright = false;
     wuleft = false;
     wuright = false;
+}
+
+-(void) shoot:(CGPoint) p{
+    int vel = 200;
+    _pnode = (CCPhysicsNode*) [(Gameplay*) _parent physicsNode];
+    gameplay = (Gameplay*) _parent;
+    
+    float rx = p.x;
+    float ry = p.y;
+    Bullet* bullet = (Bullet*)[CCBReader load:@"Bullet"];
+    bullet.enemy = FALSE;
+    [bullet setPosition: CGPointMake([gameplay player].position.x + 15, [gameplay player].position.y + 15)];
+    float mod = sqrtf((rx*rx)+(ry*ry));
+    [_parent addChild: bullet];
+    CGPoint rvel = CGPointMake(vel*rx/mod,vel*ry/mod);
+    [bullet.physicsBody setVelocity: rvel];
+    
 }
 
 @end

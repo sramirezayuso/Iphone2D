@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>29</integer>
+	<integer>88</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -130,7 +130,7 @@
 			</dict>
 			<dict>
 				<key>UUID</key>
-				<integer>21</integer>
+				<integer>29</integer>
 				<key>baseClass</key>
 				<string>CCPhysicsNode</string>
 				<key>children</key>
@@ -163,7 +163,7 @@
 							<key>collisionMask</key>
 							<array/>
 							<key>collisionType</key>
-							<string></string>
+							<string>Player</string>
 							<key>cornerRadius</key>
 							<real>0.0</real>
 							<key>density</key>
@@ -173,7 +173,7 @@
 							<key>elasticity</key>
 							<real>0.30000001192092896</real>
 							<key>friction</key>
-							<real>1</real>
+							<real>0.30000001192092896</real>
 							<key>points</key>
 							<array>
 								<array>
@@ -274,7 +274,7 @@
 						<key>displayName</key>
 						<string>Snow1</string>
 						<key>memberVarAssignmentName</key>
-						<string>_spawn1</string>
+						<string></string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>physicsBody</key>
@@ -290,7 +290,7 @@
 							<key>collisionMask</key>
 							<array/>
 							<key>collisionType</key>
-							<string></string>
+							<string>Platform</string>
 							<key>cornerRadius</key>
 							<real>0.0</real>
 							<key>density</key>
@@ -396,6 +396,8 @@
 								<string>Ground.ccb</string>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -425,7 +427,7 @@
 							<key>collisionMask</key>
 							<array/>
 							<key>collisionType</key>
-							<string></string>
+							<string>Platform</string>
 							<key>cornerRadius</key>
 							<real>0.0</real>
 							<key>density</key>
@@ -443,32 +445,40 @@
 									<real>-30.351408004760742</real>
 								</array>
 								<array>
-									<real>-38.696643829345703</real>
-									<real>-18.235784530639648</real>
+									<real>-34.973217010498047</real>
+									<real>-6.8226571083068848</real>
 								</array>
 								<array>
-									<real>59.680912017822266</real>
-									<real>-16.193746566772461</real>
+									<real>59.018081665039062</real>
+									<real>-22.225934982299805</real>
 								</array>
 								<array>
-									<real>59.907234191894531</real>
-									<real>-27.548707962036133</real>
+									<real>57.051433563232422</real>
+									<real>-34.084812164306641</real>
+								</array>
+								<array>
+									<real>55.614803314208984</real>
+									<real>-35.761680603027344</real>
 								</array>
 							</array>
 							<key>polygons</key>
 							<array>
 								<array>
 									<array>
-										<real>59.907234191894531</real>
-										<real>-27.548707962036133</real>
+										<real>55.614803314208984</real>
+										<real>-35.761680603027344</real>
 									</array>
 									<array>
-										<real>59.680912017822266</real>
-										<real>-16.193746566772461</real>
+										<real>57.051433563232422</real>
+										<real>-34.084812164306641</real>
 									</array>
 									<array>
-										<real>-38.696643829345703</real>
-										<real>-18.235784530639648</real>
+										<real>59.018081665039062</real>
+										<real>-22.225934982299805</real>
+									</array>
+									<array>
+										<real>-34.973217010498047</real>
+										<real>-6.8226571083068848</real>
 									</array>
 									<array>
 										<real>-35.717296600341797</real>
@@ -544,7 +554,7 @@
 						<key>displayName</key>
 						<string>House</string>
 						<key>memberVarAssignmentName</key>
-						<string></string>
+						<string>_spawn1</string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>physicsBody</key>
@@ -560,7 +570,7 @@
 							<key>collisionMask</key>
 							<array/>
 							<key>collisionType</key>
-							<string></string>
+							<string>Platform</string>
 							<key>cornerRadius</key>
 							<real>0.0</real>
 							<key>density</key>
@@ -687,7 +697,7 @@
 							<key>collisionMask</key>
 							<array/>
 							<key>collisionType</key>
-							<string></string>
+							<string>Wall</string>
 							<key>cornerRadius</key>
 							<real>0.0</real>
 							<key>density</key>
@@ -814,7 +824,7 @@
 							<key>collisionMask</key>
 							<array/>
 							<key>collisionType</key>
-							<string></string>
+							<string>Wall</string>
 							<key>cornerRadius</key>
 							<real>0.0</real>
 							<key>density</key>
@@ -941,7 +951,7 @@
 							<key>collisionMask</key>
 							<array/>
 							<key>collisionType</key>
-							<string></string>
+							<string>Wall</string>
 							<key>cornerRadius</key>
 							<real>0.0</real>
 							<key>density</key>
@@ -1068,7 +1078,7 @@
 							<key>collisionMask</key>
 							<array/>
 							<key>collisionType</key>
-							<string></string>
+							<string>Platform</string>
 							<key>cornerRadius</key>
 							<real>0.0</real>
 							<key>density</key>
@@ -1098,8 +1108,8 @@
 									<real>-49.03125</real>
 								</array>
 								<array>
-									<real>14.257827758789062</real>
-									<real>-26.0390625</real>
+									<real>10.09765625</real>
+									<real>-50.234405517578125</real>
 								</array>
 								<array>
 									<real>-9.6992034912109375</real>
@@ -1132,17 +1142,19 @@
 								</array>
 								<array>
 									<array>
-										<real>-38.7109375</real>
-										<real>-74.1953125</real>
-									</array>
-									<array>
 										<real>-9.6992034912109375</real>
 										<real>-55.01171875</real>
 									</array>
 									<array>
-										<real>14.257827758789062</real>
-										<real>-26.0390625</real>
+										<real>10.09765625</real>
+										<real>-50.234405517578125</real>
 									</array>
+									<array>
+										<real>-20.691390991210938</real>
+										<real>-49.03125</real>
+									</array>
+								</array>
+								<array>
 									<array>
 										<real>-20.691390991210938</real>
 										<real>-49.03125</real>
@@ -1150,6 +1162,14 @@
 									<array>
 										<real>-49.707000732421875</real>
 										<real>-69.1640625</real>
+									</array>
+									<array>
+										<real>-38.7109375</real>
+										<real>-74.1953125</real>
+									</array>
+									<array>
+										<real>-9.6992034912109375</real>
+										<real>-55.01171875</real>
 									</array>
 								</array>
 							</array>
@@ -1200,8 +1220,6 @@
 								<string>Ground.ccb</string>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>
@@ -1209,7 +1227,7 @@
 				<key>displayName</key>
 				<string>CCPhysicsNode</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>_physicsNode</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -1229,8 +1247,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.0</real>
-							<real>0.0</real>
+							<real>1</real>
+							<real>2</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
