@@ -25,7 +25,7 @@
     
     if (self) {
         CCLOG(@"Enemy created");
-        shoottimer = 20;
+        shoottimer = 100;
     }
     
     audio = [OALSimpleAudio sharedInstance];
@@ -65,11 +65,11 @@
     CGPoint rvel = CGPointMake(vel*rx/mod,vel*ry/mod);
     [bullet.physicsBody setVelocity: rvel];
     [audio playEffect:@"gun.mp3"];
-    //if(rx<0){
-    //    [self.animationManager runAnimationsForSequenceNamed:@"ShootLeft"];
-    //}else{
-    //    [self.animationManager runAnimationsForSequenceNamed:@"ShootRight"];
-    //}
+    if(rx<0){
+        [self.animationManager runAnimationsForSequenceNamed:@"ShootLeft"];
+    }else{
+        [self.animationManager runAnimationsForSequenceNamed:@"ShootRight"];
+    }
 
     
 }

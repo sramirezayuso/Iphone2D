@@ -22,11 +22,13 @@
     CCNode* _spawn3;
     
     CCNode* _ground;
-    int enemies;
-    int enemieskilled;
+
     NSArray* spawnPoints;
     NSArray* spawned;
+    int enemies;
 }
+
+int _enemieskilled;
 
 // is called when CCB file has completed loading
 - (void)didLoadFromCCB {
@@ -36,7 +38,7 @@
     _hud = [[HUD alloc] init: _player];
     [self addChild: _hud];
     enemies = 0;
-    enemieskilled = 0;
+    _enemieskilled = 0;
     spawnPoints = [NSArray arrayWithObjects:_spawn1, _spawn2, _spawn3, _ground, nil];
     
     spawned = [NSArray arrayWithObjects: @FALSE, @FALSE, @FALSE, @FALSE, nil];
@@ -83,7 +85,7 @@
     [nodeB removeFromParent];
     [nodeA removeFromParent];
     enemies = enemies - 1;
-    enemieskilled = enemieskilled+1;
+    _enemieskilled = _enemieskilled+1;
     return NO;
 }
 
@@ -106,7 +108,10 @@
 //Bala PLayer
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair Bullet:(Bullet *)nodeA Player:(CCNode *)nodeB {
     if(nodeA.enemy){
-        //[nodeB removeFromParent];
+        [nodeB removeFromParent];
+        CCScene *gameplayScene = [CCBReader loadAsScene:@"GameOver"];
+        [[CCDirector sharedDirector] replaceScene:gameplayScene];
+        
     }
     return NO;
 }

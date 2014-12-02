@@ -13,5 +13,5 @@
 -(CGPoint)playerPos;
 @property CCNode* player;
 @property CCPhysicsNode* physicsNode;
-
+@property int enemieskilled;
 @end

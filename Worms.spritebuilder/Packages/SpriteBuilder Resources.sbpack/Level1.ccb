@@ -396,8 +396,6 @@
 								<string>Ground.ccb</string>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -584,40 +582,40 @@
 							<key>points</key>
 							<array>
 								<array>
-									<real>-47.841480255126953</real>
-									<real>-44.385341644287109</real>
+									<real>-53.807941436767578</real>
+									<real>-51.067306518554688</real>
 								</array>
 								<array>
-									<real>-47.841480255126953</real>
-									<real>-31.185291290283203</real>
+									<real>-51.023632049560547</real>
+									<real>-39.962368011474609</real>
 								</array>
 								<array>
-									<real>36.914176940917969</real>
-									<real>-31.185291290283203</real>
+									<real>42.162288665771484</real>
+									<real>-42.169559478759766</real>
 								</array>
 								<array>
-									<real>39.797924041748047</real>
-									<real>-42.178150177001953</real>
+									<real>39.389030456542969</real>
+									<real>-55.421340942382812</real>
 								</array>
 							</array>
 							<key>polygons</key>
 							<array>
 								<array>
 									<array>
-										<real>39.797924041748047</real>
-										<real>-42.178150177001953</real>
+										<real>39.389030456542969</real>
+										<real>-55.421340942382812</real>
 									</array>
 									<array>
-										<real>36.914176940917969</real>
-										<real>-31.185291290283203</real>
+										<real>42.162288665771484</real>
+										<real>-42.169559478759766</real>
 									</array>
 									<array>
-										<real>-47.841480255126953</real>
-										<real>-31.185291290283203</real>
+										<real>-51.023632049560547</real>
+										<real>-39.962368011474609</real>
 									</array>
 									<array>
-										<real>-47.841480255126953</real>
-										<real>-44.385341644287109</real>
+										<real>-53.807941436767578</real>
+										<real>-51.067306518554688</real>
 									</array>
 								</array>
 							</array>
@@ -668,6 +666,8 @@
 								<string>Ground.ccb</string>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
